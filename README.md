@@ -1,3 +1,3 @@
-# Math_to_DeepLearning
+# Math_for_DeepLearning
 
 ##
