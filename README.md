@@ -6,7 +6,7 @@
 - Affine Transformation은 선형변환(Y = WX)에서 +b를 추가하여 벡터에 위치 이동의 개념을 추가시킨 것이다.
 - 아핀 공간은 벡터에 위치의 개념을 추가시킨 것이다.
  
-          Linear Transformation -> Y = WX                                                           Affine Tarnsformation -> Y = WX + B
+          Linear Transformation -> Y = WX                               Affine Tarnsformation -> Y = WX + B
  
 Affine Function은 데이터와 실제값 사이의 규칙을 찾는 과정을 거쳐 만들어진 식이다.
 
