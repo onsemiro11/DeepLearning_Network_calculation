@@ -34,3 +34,12 @@ Activation Function은 affine function에서 만들어진 식을 통해 나온 Y
 그리고, 선형시스템은 아무리 layer들을 쌓아 깊게 구현한다고 해도 f(ax+by)=af(x)+bf(y)의 성질 때문에 결국 하나의 linear연산으로 나타낼수 있다.
 
 이에 대한 해결책이 Activation Function을 통해 출력값을 비선형 시스템으로 만드는것이다.
+
+## Dense Layers
+
+Layer는 서로 다른 Parameter(Weight, Bias)들을 가지고 있는 Parametric Function들의 모임이다.
+
+즉, Neuron들의 집합이라고 생각면된다. 다양한 Neuron들이 하나의 층을 형성하고 그것을 layer라고 부른다.
+
+그리고, Dense Layers는 모든 입력값(x1,x2,x3,x4,xli)가 각각의 뉴런에 모두 들어가는 것을 말한다.
+
