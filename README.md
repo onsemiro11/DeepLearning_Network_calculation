@@ -43,4 +43,13 @@ Layer는 서로 다른 Parameter(Weight, Bias)들을 가지고 있는 Parametric
 
 그리고, Dense Layers는 모든 입력값(x1,x2,x3,x4,xli)가 각각의 뉴런에 모두 들어가는 것을 말한다.
 
-<img width="534" alt="image" src="https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fb67VJr%2Fbtrr2TzG4tv%2FEMZxVO5aKDTC6QCCo1NFFk%2Fimg.png" width="500" height="300">
+- Input vector (vector X transposed)가 ℓI(엘아이)개 있기 때문에 Weight(vector W)도 ℓI개 있어야한다.
+> 그 이유는 행렬곱의 개념을 가져와 실행하기 때문인데, 행렬곱은 XY인 경우에 X의 열의 개수와 Y의 행의 개수가 같아야 각 원소끼리 곱하면서 더해져가기 때문이다.
+ 
+- Neuron이 ℓ1개 있으면 weight 자체, bias 자체도 ℓ1개 있다.
+> 그 이유는 각 neuron에 각 weight와 bias가 할당되어 있을 거기 때문이다. 이부분이 하나의 layer에서는 당연한 말이라고 생각되겠지만, 층이 깊어질 수록 헷갈려질 수 있다. 유의해놓자.
+
+- Input 값 X의 열 개수와는 관계없이 결괏값 a vector는 neuron의 개수 ℓ1과 연관된 vector (1,ℓ1) 형태다.
+> 이유는 X ∈ R(1xℓI) 가 들어오면, 우선 W(metrix) ∈ R(ℓIxℓ1)와 행렬곱을 실행하여, bias(vector transposed) ∈ R(1xℓ1)와 더해주면, (1 x ℓI) * (ℓI x ℓ1) + (1 x ℓ1) = (1 x ℓ1)로 결괏값 a vector는 shape = (1 , ℓ1)가 된다.
+ 
+- 결괏값 a는 X * W + b 의 결괏값 Z에 activation function인 g( ) 을 진행해줘서 나온 값이다.
