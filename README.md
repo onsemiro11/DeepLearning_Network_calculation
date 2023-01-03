@@ -53,3 +53,9 @@ Layer는 서로 다른 Parameter(Weight, Bias)들을 가지고 있는 Parametric
 > 이유는 X ∈ R(1xℓI) 가 들어오면, 우선 W(metrix) ∈ R(ℓIxℓ1)와 행렬곱을 실행하여, bias(vector transposed) ∈ R(1xℓ1)와 더해주면, (1 x ℓI) * (ℓI x ℓ1) + (1 x ℓ1) = (1 x ℓ1)로 결괏값 a vector는 shape = (1 , ℓ1)가 된다.
  
 - 결괏값 a는 X * W + b 의 결괏값 Z에 activation function인 g( ) 을 진행해줘서 나온 값이다.
+
+<img width="704" alt="image" src="https://user-images.githubusercontent.com/49609175/210407623-5528c493-1d60-4f07-bfee-2a3185fecb8d.png" width="700" height="300">
+
+- 각 layer별 파라미터 개수는 ℓI (Input data X의 행 개수) x ℓ1(현재 layer의 neuron 개수) + 1 x ℓ1(현재 layer의 neuron 개수)다.
+ 
+- 이전 layer의 결괏값 a1이 다음 layer의 입력값으로 들어가고 이에 맞게 weight와 bias 개수가 할당 되어 연산된다.
