@@ -43,3 +43,4 @@ Layer는 서로 다른 Parameter(Weight, Bias)들을 가지고 있는 Parametric
 
 그리고, Dense Layers는 모든 입력값(x1,x2,x3,x4,xli)가 각각의 뉴런에 모두 들어가는 것을 말한다.
 
+<img width="534" alt="image" src="https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fb67VJr%2Fbtrr2TzG4tv%2FEMZxVO5aKDTC6QCCo1NFFk%2Fimg.png" width="500" height="300">
